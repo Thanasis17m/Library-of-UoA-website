@@ -1,0 +1,219 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Sans-serif;
+  background: #2c3e50;
+}
+
+#wrapper {
+        min-height:100%;
+        position:relative;
+        width: 1096px;/*1096*/
+        margin: 0px auto;
+        text-align: left;
+        background-color: #FFF;
+        box-shadow: 0px 2px 5px 0px #828282;
+        padding: 0px;
+      }
+
+      #content {
+        padding-bottom:400px; /* Height of the footer element */
+      }
+
+      #footer {
+        background: lightgrey;
+        width:100%;
+        height:80px;/*htan 100 arxika*/
+        position:relative;
+        float: bottom;
+        bottom:0;
+        left:0;
+        clear:both;
+      }
+
+      #navbar{
+        position: relative;
+        z-index: 1; /*makes dropdown menu of navbar be on top of other divs*/
+      }
+      
+      #navbar ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+      }
+
+      #navbar li, #footer li {
+          float: left;
+      }
+
+      #navbar li a, .dropbutton {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+
+      #navbar li a:hover:not(.active), .dropdown:hover .dropbutton {
+          background-color: #111;
+          color: #1abc9c;
+      }
+
+      .active {
+          background-color: #4CAF50;
+      }
+
+      .dropdown {
+          display: inline-block;
+      }
+
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      }
+
+      .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+      }
+
+      .dropdown-content a:hover {background-color: #f1f1f1;}
+
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+
+      #footer ul{
+        list-style-type: none;
+        width:650px;
+          margin: auto;
+          padding: 0;
+          overflow: hidden;
+      }
+
+      #footer li a{
+        display: inline-block;
+          padding: 8px;
+          background-color: lightgrey;
+          text-align: center;
+          width:150px;
+      }
+
+      
+
+      .help{
+        display: inline-block;
+        position: absolute;
+
+      }
+
+
+
+fieldset {
+  border: none;
+}
+
+.login {
+  position: absolute;
+
+  width: 350px;
+  display: none;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 15px solid #ECF0F1;
+  left: 10%;
+  position: absolute;
+  top: -10px;
+}
+
+.formholder {
+  background: #ecf0f1;
+  width: 277px;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+.formholder input[type="email"], .formholder input[type="password"] {
+  padding: 7px 5px;
+  margin: 10px 0;
+  width: 96%;
+  display: block;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.formholder input[type="email"]:focus, .formholder input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 1px 1px #1abc9c;
+}
+.formholder input[type="submit"] {
+  background: #1abc9c;
+  padding: 10px;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+.formholder input[type="submit"]:hover {
+  background: #1bc6a4;
+}
+
+.randompad {
+  padding: 10px;
+}
+
+.green {
+  color: #1abc9c;
+}
+
+.select{ 
+   -webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;   
+   -webkit-border-radius: 0;  /* Safari 3-4, iOS 1-3.2, Android 1.6- */    
+   -moz-border-radius: 0;  /* Firefox 1-3.6 */     
+   border-radius: 0;  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+}
+
+input[type=submit] {
+    border-radius: 15px;
+    border: 0;
+    min-width: 80px;
+    min-height:25px;
+    font-family: Tahoma;
+    background: #333;
+    color:white;
+    /* Old browsers */
+    
+
+}
+
+input[type=submit]:hover{
+
+  color:#1abc9c;
+  cursor:pointer ;
+}
+
+
+input[type=text]{
+  border:none;
+  border-radius: 15px;
+}
